@@ -4,48 +4,32 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home-container">
-      {/* 1. HERO SECTION */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <span className="hero-badge">A Premier Publishing House</span>
-          <h1>Empowering Scholarly Voices</h1>
-          <p>
-            Dedicated to bringing innovative research and scholarly works to life. 
-            From manuscript submission to global distribution, we partner with authors 
-            to inspire, educate, and challenge readers.
-          </p>
-          <div className="hero-actions">
-            <button className="btn-primary">Submit Manuscript</button>
-            <button className="btn-secondary">Explore Publications</button>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <div className="visual-circle gold"></div>
-          <div className="visual-circle blue"></div>
-        </div>
-      </section>
+      {/* Dynamic Background Grid */}
+      <div className="bg-grid"></div>
 
-      {/* 2. FEATURES SECTION */}
-      <section className="features-section">
-        <div className="section-header">
-          <h2>Our Core Specializations</h2>
-          <p>Tailored solutions for academic excellence across disciplines.</p>
+      <section className="hero-main">
+        <div className="hero-text">
+          <div className="status-pill">
+            <span className="dot"></span> Now Accepting Manuscripts
+          </div>
+          <h1>
+            Publishing the <span className="gradient-text">Future</span> of Research
+          </h1>
+          <p>
+            Empyrean Press merges academic rigor with modern digital distribution. 
+            We don't just print books; we launch intellectual legacies.
+          </p>
+          <div className="cta-group">
+            <button className="btn-glow">Start Publishing</button>
+            <button className="btn-outline">Browse Library</button>
+          </div>
         </div>
-        <div className="feature-grid">
-          <div className="feature-card">
-            <div className="icon gold">📚</div>
-            <h3>Book Chapters</h3>
-            <p>Contribute to peer-reviewed edited volumes.</p>
-          </div>
-          <div className="feature-card">
-            <div className="icon blue">📖</div>
-            <h3>Scholarly Books</h3>
-            <p>Publish original monographs and research books.</p>
-          </div>
-          <div className="feature-card">
-            <div className="icon white">🖊️</div>
-            <h3>Editorial Support</h3>
-            <p>Professional guidance from manuscript to publication.</p>
+
+        <div className="hero-visual">
+          <div className="abstract-shape">
+            <div className="floating-card c1">Peer Reviewed</div>
+            <div className="floating-card c2">Global Reach</div>
+            <div className="floating-card c3">Digital First</div>
           </div>
         </div>
       </section>
